@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+        }
+        .container{
+            display: grid;
+            width: 748px;
+            height: 748px;
+            background-color: #F0F1EC;
+            grid-template-columns: 320px 428px;
+            grid-template-rows: 414px 295px 20px;
+            gap: 0px;
+        }
+       .red{
+        height: 414px;
+        width: 320px;
+        background-color: #E72F24;
+        border-bottom: 9px solid #000;
+        border-right: 9px solid #000;
+       } 
+
+       .box2{
+        height: 414px;
+        border-bottom: 9px solid #000;
+       }
+
+       .box3{
+        width: 320px;
+        border-bottom: 9px solid #000;
+        border-right: 9px solid #000;
+       }
+
+       .box4{
+        /* make a box 4 a seperate grid in itself */
+        height: 315px;
+        /* width: 419px; */
+        display: grid;
+        grid-template-columns: 360px 50px ;
+        grid-template-rows:295px 20px;
+        /* border: 8px solid #000 ; */
+        }
+        
+        .box4a{
+            border: 9px solid #000;
+        }
+
+        .box4b{
+            width: 65px;
+            height: 325px;
+            /* border: px solid #000; */
+            display: grid;
+            grid-template-rows: 140px 175px;
+        }
+
+        .box4b1{
+            height: 130px;
+            width: 100%;
+            background-color: #004592;
+            margin-top: 9px;
+            border-bottom: 10px solid #000 ;
+        }
+        .box4c{
+            width: 342px;
+            height: 40px;
+            border-left: 9px solid #000;
+            border-right: 9px solid #000;
+            display: grid;
+            grid-template-columns: 198px 153px;
+        }
+        .box4c1{
+            width: 198px;
+            height: 100%;
+            background-color: #F9D01E;
+            border-right: 9px solid #000;
+            /* z-index: 1; */
+        }
+        .box4c2{
+            background-color: #232629;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box red"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+        <div class="box4">
+            <div class="box4a item"></div>
+            <div class="box4b item">
+                <div class="box4b1"></div>
+                <div class="box4b2"></div>
+            </div>
+            <div class="box4c item">
+                <div class="box4c1"></div>
+                <div class="box4c2"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
